@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-color: #0f0524;
+    justify-content: space-around;
+}
+
+/*header*/
+header{
+    display:flex;
+    justify-content: end;
+    }
+    nav ul{
+        display: flex;
+       padding: 20px;
+        justify-content: flex-end;
+    }
+    ul li{
+       list-style: none;
+        cursor: pointer;
+      }
+    ul li a{
+        text-decoration: none;
+        color: aliceblue;
+       padding: 10px;
+    }
+    .Home{
+        background: #41d2ec65;
+        border-radius: 4px;
+    }
+    .menu{
+        width: 25px;
+        display: none;
+    }
+    /* main section */
+    .main-section{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+    .waving-hand{
+        width: 35px;
+    }
+    .pcimage{
+        width: 400px;
+    }
+    h2{
+        color: aliceblue;
+        text-align: center;
+    }
+    h2 a{
+        text-decoration: none;
+        border-bottom: 3px solid blue;
+        color: aliceblue;
+       margin-bottom: 20px;
+    }
+    h3{color: antiquewhite;
+    font-size: 25px;}
+    h1{
+        color: aliceblue;
+        font-size:50px ;
+    }
+    span{color: #ecec41;
+    font-size: 35px;}
+    .project_img{
+        width: 300px;
+ }
+ .project{
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+ }
+ p{
+    color: azure;
+    margin-left: 130px;
+    font-size: 16px;
+    
+ }
+ .first-line{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+ }
+ .second-line{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+ }
+.footer-img{
+    
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+gap: 30px;}
+    .social-logo{
+        width: 60px;
+    }
+
+    /* media query */
+    @media screen and (max-width:800px) {
+        .navigation{
+justify-content: flex-start;
+
+        }
+       nav ul{
+            display: none;
+        }
+        .menu{
+            display: contents;
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 5px;
+            margin-bottom: 20px;
+          
+        }
+.main-section{
+    flex-direction: column;
+}
+.first-line{
+    flex-direction: column;
+    align-items: center;
+
+}
+.second-line{
+    flex-direction: column;
+    align-items: center;
+}
+
+    }
